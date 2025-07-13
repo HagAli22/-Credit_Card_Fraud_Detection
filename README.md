@@ -2,7 +2,7 @@
 #  Credit Card Fraud Detection 
 
 This project builds a robust system to **detect fraudulent credit card transactions** using classical machine learning models and a deep learning model with **Focal Loss** and using a dataset from Kaggle, which includes  284,807 credit card transactions with only 492 frauds, **is highly unbalanced**. It includes complete workflows for data processing, model training, evaluation, and reporting.
-achieving an F1-score of 0.85 and 0.85 PR_AUC for the positive class (fraud).
+achieving an F1-score of 0.85 and 0.86 PR_AUC for the positive class (fraud).
 
 ---
 
