@@ -120,7 +120,7 @@ Designed to handle extreme class imbalance with tunable `alpha` and `gamma`.
 
 * The best result archieve by Alpha 0.75 and gamma 2.
 
-![best_alpha_gamma](models\focal_loss_checkpointsfocal_last\best_focal_loss.jpg)
+![best_alpha_gamma](models/focal_loss_checkpointsfocal_last/best_focal_loss.jpg)
 
 * Notes:
   * Alpth and gamma sometimes unstables train using batchnorm make this effect less occur and switching from Adam to SGD also. 
@@ -142,9 +142,9 @@ Supports multiple techniques:
 * SMOTE (Synthetic Minority Over-sampling Technique) is an oversampling method used to generate synthetic samples for the minority class. Despite experimenting with SMOTE, random over-sampling, and under-sampling techniques, the results on the validation data were poor.
 
 * Smote (0.05-ratio) results:
- ![somte_0.05](models\2025_07_12_21_15_smoth\model_comparison_validation_dataset.png)
+ ![somte_0.05](models/2025_07_12_21_15_smoth/model_comparison_validation_dataset.png)
 * RandomUnderSampler (0.05-ratio) results:
- ![under_0.05](models\2025_07_12_18_40_under\model_comparison_validation_dataset.png)
+ ![under_0.05](models/2025_07_12_18_40_under/model_comparison_validation_dataset.png)
 
 ---
 
