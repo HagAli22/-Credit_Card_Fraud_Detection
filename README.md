@@ -95,7 +95,7 @@ Each trained model is saved in `models/<timestamp>/` with:
 
 ## Results
 
-![model_comparison](models/2025_07_12_13_20/model_comparison-(validation dataset).png)
+![model_comparison](models/2025_07_12_13_20/model_comparison_validation_dataset.png)
 
 Note:
 
