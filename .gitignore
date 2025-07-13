@@ -1,10 +1,7 @@
 *.pyc
 __pycache__/
 .ipynb_checkpoints/
-models/
 outputs/
 logs/
-*.pkl
-*.pth
 .DS_Store
 .env
