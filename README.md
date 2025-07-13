@@ -93,6 +93,8 @@ Each trained model is saved in `models/<timestamp>/` with:
 - Voting classifier ensemble (if enabled)
 - PR-AUC metrics
 
+![Result]("models\2025_07_12_13_20\model_comparison-(validation dataset).png")
+
 ---
 
 ## Focal Loss Model (PyTorch)
