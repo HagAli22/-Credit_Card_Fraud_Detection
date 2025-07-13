@@ -1,7 +1,8 @@
 
 #  Credit Card Fraud Detection 
 
-This project builds a robust system to **detect fraudulent credit card transactions** using classical machine learning models and a deep learning model with **Focal Loss**. It includes complete workflows for data processing, model training, evaluation, and reporting.
+This project builds a robust system to **detect fraudulent credit card transactions** using classical machine learning models and a deep learning model with **Focal Loss** and using a dataset from Kaggle, which includes  284,807 credit card transactions with only 492 frauds, is highly unbalanced. It includes complete workflows for data processing, model training, evaluation, and reporting.
+achieving an F1-score of 0.85 and 0.85 PR_AUC for the positive class (fraud).
 
 ---
 
@@ -113,6 +114,18 @@ BatchNorm → Tanh → Dropout → Focal Loss
 
 Designed to handle extreme class imbalance with tunable `alpha` and `gamma`.
 
+#### Focal-loss results 
+
+* I tried Server combination of Alpha (0.80-0.99, +0.5) and gamma (0-4, +1).
+
+* The best result archieve by Alpha 0.75 and gamma 2.
+
+![best_alpha_gamma](models\focal_loss_checkpointsfocal_last\best_focal_loss.jpg)
+
+* Notes:
+  * Alpth and gamma sometimes unstables train using batchnorm make this effect less occur and switching from Adam to SGD also. 
+  * High gamma (5~7) gives very noisey loss curve.
+
 ---
 
 ## Class Imbalance Handling
@@ -121,6 +134,17 @@ Supports multiple techniques:
 - Class Weights (for LR, RF)
 - Oversampling (`do_balance`)
 - Focal Loss (for PyTorch NN)
+
+---
+
+#### Smote and undersampling technique 
+
+* SMOTE (Synthetic Minority Over-sampling Technique) is an oversampling method used to generate synthetic samples for the minority class. Despite experimenting with SMOTE, random over-sampling, and under-sampling techniques, the results on the validation data were poor.
+
+* Smote (0.05-ratio) results:
+ ![somte_0.05](models\2025_07_12_21_15_smoth\model_comparison_validation_dataset.png)
+* RandomUnderSampler (0.05-ratio) results:
+ ![under_0.05](models\2025_07_12_18_40_under\model_comparison_validation_dataset.png)
 
 ---
 
