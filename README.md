@@ -93,7 +93,13 @@ Each trained model is saved in `models/<timestamp>/` with:
 - Voting classifier ensemble (if enabled)
 - PR-AUC metrics
 
-![Result](models\2025_07_12_13_20\model_comparison-(validation dataset).png)
+## Results
+
+![model_comparison](models\2025_07_12_13_20\model_comparison-(validation dataset).png)
+
+Note:
+
+- The optimal threshold calculated by finding highest F1-score and it's threshold **in training data only**.
 
 ---
 
