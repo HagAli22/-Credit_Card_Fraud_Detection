@@ -1,11 +1,11 @@
 
-# 💳 Credit Card Fraud Detection 🚨
+#  Credit Card Fraud Detection 
 
 This project builds a robust system to **detect fraudulent credit card transactions** using classical machine learning models and a deep learning model with **Focal Loss**. It includes complete workflows for data processing, model training, evaluation, and reporting.
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 CREDIT-CARD-FRAUD-DETECTION/
@@ -32,7 +32,7 @@ CREDIT-CARD-FRAUD-DETECTION/
 
 ---
 
-## 📊 Models Used
+## Models Used
 
 - **Logistic Regression**
 - **Random Forest**
@@ -43,21 +43,21 @@ CREDIT-CARD-FRAUD-DETECTION/
 
 ---
 
-## ⚙️ Configuration Files
+## Configuration Files
 
 - `config/data.yml` – Paths, balancing, scaling
 - `config/trainer.yml` – Training settings for each model, evaluation config
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 ### 1. Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-> ⚠️ Includes `scikit-learn`, `pandas`, `matplotlib`, `seaborn`, `torch`, `mlxtend`
+> Includes `scikit-learn`, `pandas`, `matplotlib`, `seaborn`, `torch`, `mlxtend`
 
 ---
 
@@ -82,7 +82,7 @@ python test_script.py
 
 ---
 
-## 📈 Evaluation Outputs
+## Evaluation Outputs
 
 Each trained model is saved in `models/<timestamp>/` with:
 
@@ -95,7 +95,7 @@ Each trained model is saved in `models/<timestamp>/` with:
 
 ---
 
-## 🧠 Focal Loss Model (PyTorch)
+## Focal Loss Model (PyTorch)
 
 Trained via custom architecture with:
 
@@ -107,7 +107,7 @@ Designed to handle extreme class imbalance with tunable `alpha` and `gamma`.
 
 ---
 
-## 📉 Class Imbalance Handling
+## Class Imbalance Handling
 
 Supports multiple techniques:
 - Class Weights (for LR, RF)
@@ -116,37 +116,4 @@ Supports multiple techniques:
 
 ---
 
-## 📊 Example Result (Markdown Table)
 
-| Model              | F1 Score (Positive) | Precision | Recall | PR-AUC |
-|-------------------|---------------------|-----------|--------|--------|
-| LogisticRegression| 0.84                | 0.86      | 0.82   | 0.88   |
-| Random Forest      | 0.87               | 0.85      | 0.89   | 0.90   |
-| FocalLoss NN       | 0.90               | 0.88      | 0.92   | 0.94   |
-
----
-
-## ✅ Future Enhancements
-
-- 🔁 Early Stopping & Best Checkpoint saving
-- 📦 Packaging as pip-installable module
-- 📉 Support for ROC-AUC evaluation
-- 📈 Hyperparameter tuning automation via Optuna
-- 📤 Model deployment as Flask/FastAPI service
-
----
-
-## 👨‍💻 Author
-
-**Mostafa HagAli**  
-*Machine Learning Engineer*  
-📧 your_email@example.com  
-🔗 [LinkedIn/GitHub/Portfolio]
-
----
-
-## 🛡️ License
-
-MIT License - Feel free to use, modify, and distribute.
-
----
