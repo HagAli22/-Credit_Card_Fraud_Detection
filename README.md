@@ -120,7 +120,8 @@ Designed to handle extreme class imbalance with tunable `alpha` and `gamma`.
 
 * The best result archieve by Alpha 0.75 and gamma 2.
 
-![best_alpha_gamma](models/focal_loss_checkpointsfocal_last/best_focal_loss.jpg)
+    -![best_alpha_gamma](models/focal_loss_checkpointsfocal_last/best_focal_loss.jpg)
+
 
 * Notes:
   * Alpth and gamma sometimes unstables train using batchnorm make this effect less occur and switching from Adam to SGD also. 
